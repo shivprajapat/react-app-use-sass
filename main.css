@@ -1,0 +1,344 @@
+/*-----------------------------------------------------------
+* Template Name    : name
+* Auther Name      : Shiv Kumar Prajapat
+* File Description : This files Includes all Style CSS
+*------------------------------------------------------------*/
+/*======================================================================
+ Table of Content:
+=================================
+  Global CSS
+=================================
+
+01. Color
+02. Theme
+03. Variables
+04. Base
+05. Extend
+06. Mixins
+07. Extend
+08. Fonts
+09. Utils
+10. Media Query
+
+=================================
+  Components CSS
+=================================
+
+========================================================================*/
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+a,
+li,
+ul,
+p,
+form,
+input {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: normal;
+  font-family: "Sans-serif";
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 163px;
+}
+
+h2 {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  h1 {
+    font-size: 142px;
+  }
+
+  h2 {
+    font-size: 90px;
+  }
+
+  h3 {
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: 38px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  h1 {
+    font-size: 102px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  h4 {
+    font-size: 50px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 54px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+}
+@font-face {
+  font-family: "FoundersGrotesk-Light";
+  src: url("../fonts/FoundersGrotesk-Light.woff2");
+}
+/* =======================
+  @Mixin
+  =======================*/
+.btnGreen, .btnRed {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding: 10px 32px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.btnRed {
+  color: red;
+}
+.btnRed:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.btnGreen {
+  color: green;
+}
+.btnGreen:hover {
+  color: #fff;
+  background-color: #f00;
+}
+
+/* Paddings and Margins */
+.section-padding {
+  padding: 70px 0px;
+}
+
+.small-padding {
+  padding: 60px 0px;
+}
+
+.large-padding {
+  padding: 110px 0px;
+}
+
+.a p, .b p {
+  display: inline-block;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.media-box {
+  background-color: red;
+}
+.media-box p {
+  font-size: 52px;
+  line-height: 55px;
+  font-weight: 900;
+  background-color: red;
+  font-family: "FoundersGrotesk-Light";
+}
+@media (max-width: 1400px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (max-width: 1200px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (max-width: 992px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (max-width: 767px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (max-width: 576px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (min-width: 1400px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (min-width: 1200px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (min-width: 992px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (min-width: 767px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (min-width: 576px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .media-box {
+    background-color: pink;
+  }
+}/*# sourceMappingURL=main.css.map */
